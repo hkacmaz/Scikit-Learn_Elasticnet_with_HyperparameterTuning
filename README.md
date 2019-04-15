@@ -22,3 +22,7 @@ Ridge uses the L2 penatly to regularize;
 Lasso ised the L1 penalty to regularize, while ridge used the L2 penalty to regularize, together in a linear combination of the L1 penalty and L2 penalty known as ElasticNet. 
 
   a*L1 + b*L2 In sklearn 'l1_ratio' of 1 corresponds to an L1 penalty and anything lower is a combination of L1 & L2.
+
+It is very common to use ElasticNet with linear regression model or logistic regression model(LR) for the purpose of regression problems (usually continious data is required as output).
+
+We can use SVM in some cases that we can use LR, but the case is to use ElasticNet which we cannot use with SVM, SVM can only use L2 regularization in some cases.
